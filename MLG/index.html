@@ -1,0 +1,84 @@
+<html><head>
+  <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/gameframe.css">
+  <link rel="stylesheet" href="css/toggle.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y2W1BSNMG9"></script>
+  <title>Platformer.io</title>
+  <link rel="icon" href="images/favicon.png">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y2W1BSNMG9');
+  </script>
+  <link rel="stylesheet" href="css/line.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="right">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="/index.html" class="logo">
+        <img src="images/favicon.png" class="logo-image">
+        Platformer.io
+      </a>
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="/index.html"><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Home</a></li>
+        <li><a href="/games"><i class="fa-solid fa-gamepad" style="margin-right: 5px;"></i>Games</a></li>
+       <!--<li><a href="/music.html"><i class="fa-solid fa-music" style="margin-right: 5px;"></i>Music</a></li>-->
+        <li><a href="/extras"><i class="fa-solid fa-circle-plus" style="margin-right: 5px;"></i>Extras</a></li>
+        <li><a href="/settings.html"><i class="fa-solid fa-gear" style="margin-right: 5px;"></i>Settings</a></li>
+        <li><a href="/profile.html"><i class="fa-solid fa-user" style="margin-right: 5px;"></i>Profile</a></li>
+       
+      </ul>
+    </div>
+    <div class="left">
+      <div id="clock" class="clock hidden" onload="showTime()"></div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div class="gameframe-container" style="margin-top: 20px;">
+      <iframe class="gameframe" src="" allowfullscreen="" scrolling="yes"></iframe>
+      <div class="options">
+        <div class="left">
+          <img class="game-image" src="images/favicon.png" style="width: 35px; height: 35px; border-radius: 10px;">
+          <h1 id="gamename" style="font-weight: 300;">No Game Here...</h1>
+        </div>
+        <div class="right">
+          <button class="star" id="likeButton" onclick="toggleLike()">
+            <p class="star-logo">
+              <i class="fa-regular fa-star" style="color: #fff;"></i>
+            </p>
+          </button>
+          <button class="expand" onclick="fullscreen()">
+            <p class="expand-logo">
+              <i class="fa-solid fa-expand" style="color: #fff;"></i>
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Copyright Platformer.io 2023</p>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, "google_translate_element");
+      }
+    </script>
+    <script type="text/javascript" src="js/element.js"></script>
+  </footer>
+
+<script src="js/fullscreen.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/share.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/toggle.js"></script>
+</body></html>
